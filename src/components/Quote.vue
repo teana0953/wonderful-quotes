@@ -1,27 +1,28 @@
 <template>
-    <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="panel panel-default">
-            <div class="panel-body quote">
+    <b-col sm="6" md="4" lg="3">
+        <b-card class="quote">
+            <b-card-text class="quote__text">
                 <slot></slot>
-            </div>
-        </div>
-    </div>
+            </b-card-text>
+        </b-card>
+    </b-col>
 </template>
 
 <script></script>
 
 <style>
-.panel-body {
-    font-family: 'Arizonia', cursive;
-    font-size: 24px;
-    color: #6e6e6e;
-}
-
 .quote {
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .quote:hover {
     background-color: #ffe2e2;
+}
+
+.quote__text {
+    font-family: 'Arizonia', cursive;
+    font-size: 24px;
+    color: #6e6e6e;
 }
 </style>
