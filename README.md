@@ -2,17 +2,28 @@
 
 > A Vue.js project for practice
 
-## Build Setup
+## Project setup
 
-``` bash
-# install dependencies
+```
 npm install
+```
 
-# serve with hot reload at localhost:8080
-npm run dev
+### Compiles and hot-reloads for development
 
-# build for production with minification
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+
+```
 npm run build
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### Customize configuration
+
+See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## Other Notes
+
+1. [demo page](https://teana0953.github.io/wonderful-quotes/)

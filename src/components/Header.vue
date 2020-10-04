@@ -1,26 +1,14 @@
 <template>
-    <div class="row">
-        <div class="col-sm-12">
-            <h3>Quotes Added</h3>
-            <div class="progress">
-                <div class="progress">
-                    <div
-                        class="progress-bar"
-                        role="progressbar"
-                        aria-valuenow="60"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                        :style="{
-                            width: (quoteCount / maxQuotes) * 100 + '%',
-                        }"
-                    >
-                        {{ quoteCount }} /
-                        {{ maxQuotes }}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <b-row class="header">
+        <b-col col sm="12">
+            <h3 class="header__title">Quotes Added</h3>
+            <b-progress class="header_progress" :max="maxQuotes">
+                <b-progress-bar :value="quoteCount">
+                    <span>{{ quoteCount }} / {{ maxQuotes }}</span>
+                </b-progress-bar>
+            </b-progress>
+        </b-col>
+    </b-row>
 </template>
 
 <script>
@@ -28,3 +16,13 @@ export default {
     props: ['quoteCount', 'maxQuotes'],
 };
 </script>
+
+<style scoped>
+.header__title {
+    margin-top: 20px;
+}
+.header_progress {
+    height: 20px;
+    margin-bottom: 20px;
+}
+</style>

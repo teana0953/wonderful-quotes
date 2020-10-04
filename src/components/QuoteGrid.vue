@@ -1,7 +1,7 @@
 <template>
-    <div class="row">
+    <b-row>
         <app-quote v-for="(quote, index) in quotes" :key="index" @click.native="deleteQuote(index)">{{ quote }}</app-quote>
-    </div>
+    </b-row>
 </template>
 
 <script>
