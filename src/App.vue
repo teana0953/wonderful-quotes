@@ -1,14 +1,14 @@
 <template>
-    <div class="container">
+    <b-container>
         <app-header :quoteCount="quotes.length" :maxQuotes="maxQuotes"></app-header>
         <app-new-quote @quoteAdded="newQuote"></app-new-quote>
         <app-quote-grid :quotes="quotes" @quoteDeleted="deleteQuote"></app-quote-grid>
-        <div class="row">
-            <div class="col-sm-12 text-center">
+        <b-row>
+            <b-col class="text-center" col sm="12">
                 <div class="alert alert-info">Info: Click on a Quote to delete it!</div>
-            </div>
-        </div>
-    </div>
+            </b-col>
+        </b-row>
+    </b-container>
 </template>
 
 <script>
@@ -17,7 +17,7 @@ import NewQuote from './components/NewQuote.vue';
 import Header from './components/Header.vue';
 
 export default {
-    data: function () {
+    data: function() {
         return {
             quotes: ['Just a Quote to see something'],
             maxQuotes: 10,

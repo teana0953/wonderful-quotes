@@ -1,20 +1,20 @@
 <template>
-    <div class="row">
+    <b-row>
         <form>
-            <div class="col-sm-8 col-sm-offset-2 col-xs-12 col-md-6 col-md-offset-3 form-group">
+            <b-col sm="8" offset-sm="2" xs="12" md="6" offset-md="3" class="form-group">
                 <label>Quote</label>
                 <textarea class="form-control" rows="3" v-model="quote"></textarea>
-            </div>
-            <div class="col-sm-8 col-sm-offset-2 col-xs-12 col-md-6 col-md-offset-3 form-group">
+            </b-col>
+            <b-col sm="8" offset-sm="2" xs="12" md="6" offset-md="3" class="form-group">
                 <button class="btn btn-primary" @click.prevent="createNew">Add Quote</button>
-            </div>
+            </b-col>
         </form>
-    </div>
+    </b-row>
 </template>
 
 <script>
 export default {
-    data: function () {
+    data: function() {
         return {
             quote: '',
         };
@@ -28,4 +28,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+form {
+    width: 100%;
+}
+</style>
