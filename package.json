@@ -11,6 +11,8 @@
         "build:doc": "vue-cli-service build ./src/main.js --dest docs --mode development"
     },
     "dependencies": {
+        "bootstrap": "^4.5.2",
+        "bootstrap-vue": "^2.17.3",
         "core-js": "^3.6.5",
         "vue": "^2.6.11"
     },
