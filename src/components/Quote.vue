@@ -21,6 +21,7 @@
 }
 
 .quote__text {
+    white-space: pre-wrap;
     font-family: 'Arizonia', cursive;
     font-size: 24px;
     color: #6e6e6e;
